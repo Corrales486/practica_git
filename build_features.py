@@ -23,6 +23,7 @@ def build_lsa(ctx):
                               ('tfidf', TfidfTransformer()),
                               ('truncated_svd', TruncatedSVD(n_components = 100, random_state=42))])
 
+
     joblib.dump(text_pipeline, ctx.obj['pipeline_output_file'])
 
 @click.group()
