@@ -21,7 +21,7 @@ def build_lsa(ctx):
 
     text_pipeline = Pipeline([('vect', CountVectorizer()),
                               ('tfidf', TfidfTransformer()),
-                              ('svd', TruncatedSVD())])
+                              ('truncated_svd', TruncatedSVD())])
 
     joblib.dump(text_pipeline, ctx.obj['pipeline_output_file'])
 
