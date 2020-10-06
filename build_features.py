@@ -2,6 +2,7 @@ import click
 
 @click.command()
 @click.pass_context
+
 def build_tfidf(ctx):
     pass
 
@@ -23,8 +24,3 @@ if __name__ == '__main__':
     entry_point.add_command(build_lsa)
     entry_point(obj={})
 
-def build_tfidf(ctx):
-    pass
-
-def build_lsa(ctx):
-    pass
