@@ -1,8 +1,3 @@
-def build_tfidf(ctx):
-    pass
-
-def build_lsa(ctx):
-    pass
 import click
 
 @click.command()
@@ -27,3 +22,9 @@ if __name__ == '__main__':
     entry_point.add_command(build_tfidf)
     entry_point.add_command(build_lsa)
     entry_point(obj={})
+
+def build_tfidf(ctx):
+    pass
+
+def build_lsa(ctx):
+    pass
