@@ -1,0 +1,4 @@
+# Para ignorar carpetas enteras haríamos nombre_carpeta/
+# Para ignorar archivos .json o .pkl con asterisco
+*.json
+*.pkl
